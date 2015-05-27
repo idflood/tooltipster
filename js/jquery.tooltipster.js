@@ -1056,7 +1056,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					self.$tooltip.find('.tooltipster-arrow').remove();
 					
 					// build out the arrow and append it		
-					var arrowConstruct = '<div class="'+ arrowClass +' tooltipster-arrow" style="'+ arrowReposition +'">'+ arrowBorder +'<span style="border-color:'+ arrowColor +';"></span></div>';
+					var arrowStyle = arrowColor ? ' style="border-color:' + arrowColor + ';"' : '';
+					var arrowConstruct = '<div class="'+ arrowClass +' tooltipster-arrow" style="'+ arrowReposition +'">'+ arrowBorder +'<span'+ arrowStyle +'></span></div>';
 					self.$tooltip.append(arrowConstruct);
 				}
 				
